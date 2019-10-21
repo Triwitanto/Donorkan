@@ -21,7 +21,7 @@ public class RecyclerViewStokDarah extends RecyclerView.Adapter<RecyclerViewStok
     private Context context;
     private List<StokDarah> listStokDarah;
 
-    public RecyclerViewStokDarah(Context context, List<StokDarah> listStokDarah) {
+    RecyclerViewStokDarah(Context context, List<StokDarah> listStokDarah) {
         this.context = context;
         this.listStokDarah = listStokDarah;
     }
