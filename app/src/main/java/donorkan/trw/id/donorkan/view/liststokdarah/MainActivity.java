@@ -27,10 +27,6 @@ public class MainActivity extends AppCompatActivity implements  MainView {
         setContentView(R.layout.activity_main);
         presenter = new MainPresenter(this);
         ButterKnife.bind(this);
-//        Toolbar toolbar = findViewById(R.id.toolbar);
-//        toolbar.setTitle("Beranda");
-//        toolbar.setTitleTextColor(getResources().getColor(R.color.white));
-//        setSupportActionBar(toolbar);
         presenter.getListSurat("AKfycbxENZUqbOHUz7c7CevxlMJMkjxRMtP5rRim-SjFwcLSO9UDiBk", "b_pos", "AHF","Jawa Barat");
     }
     @Override

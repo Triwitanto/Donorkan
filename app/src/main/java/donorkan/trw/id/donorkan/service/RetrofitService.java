@@ -15,7 +15,7 @@ public class RetrofitService extends BaseService<RetrofitApi> {
 
     private static RetrofitService instance;
 
-    public static RetrofitService getInstance() {
+    static RetrofitService getInstance() {
         if (instance == null) {
             instance = new RetrofitService();
         }
@@ -23,7 +23,7 @@ public class RetrofitService extends BaseService<RetrofitApi> {
         return instance;
     }
 
-    public RetrofitService() {
+    private RetrofitService() {
         setApi(RetrofitApi.class);
     }
 
